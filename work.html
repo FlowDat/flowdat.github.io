@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work — Syed Muhammad Usama</title>
+  <meta name="description" content="Research and applied CFD: 3DS DNS, SPECTRE, quantum scattering, particles, wind, batteries, reservoirs.">
+  <link rel="canonical" href="https://flowdat.github.io/work.html">
+  <meta property="og:title" content="Work — Syed Muhammad Usama">
+  <meta property="og:description" content="Research and applied CFD: 3DS DNS, SPECTRE, quantum scattering, particles, wind, batteries, reservoirs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flowdat.github.io/work.html">
+  <meta property="og:image" content="https://flowdat.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Work — Syed Muhammad Usama">
+  <meta name="twitter:description" content="Research and applied CFD: 3DS DNS, SPECTRE, quantum scattering, particles, wind, batteries, reservoirs.">
+  <meta name="twitter:image" content="https://flowdat.github.io/assets/img/og.jpg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  
+</head>
+<body data-page="work">
+
+<header class="site-header" id="header">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="6" fill="#08090c"/>
+        <g stroke="#5ee0c8" stroke-width="1.4" stroke-linecap="square">
+          <path d="M6 9h8M10 6v6"/>
+          <path d="M14 16h10M19 12v8" opacity=".85"/>
+          <path d="M8 24h6M11 21v6" opacity=".65"/>
+        </g>
+        <circle cx="24.5" cy="23.5" r="1.4" fill="#d08a5a"/>
+      </svg>
+      <span>Flowdat</span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="nav">
+      <a href="/work.html" data-page="work">Work</a>
+      <a href="/publications.html" data-page="papers">Papers</a>
+      <a href="/codes.html" data-page="codes">Codes</a>
+      <a href="/about.html" data-page="about">About</a>
+      <a class="nav-cv" href="/assets/cv.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="kicker">Research &amp; applications</p>
+    <h1>Work.</h1>
+    <p class="lead">Peer-reviewed numerics, industrial CFD, and open codes. Filter by theme, or open a case for the method, the result, and the paper.</p>
+    <div class="filters" role="tablist">
+      <button data-filter="all" class="is-on">All</button>
+      <button data-filter="turbulence">Turbulence</button>
+      <button data-filter="quantum">Quantum</button>
+      <button data-filter="energy">Energy</button>
+      <button data-filter="code">Codes</button>
+    </div>
+  </div>
+</section>
+<section style="padding-bottom:5rem">
+  <div class="wrap-wide grid-3">
+    <a class="card" href="/work/3ds.html" data-filter-item="turbulence code">
+      <div class="thumb"><img src="/assets/img/work-3ds.jpg" alt=""></div>
+      <div class="card-body">
+        <p class="kicker">Turbulence · HPC</p>
+        <h3>3D sparse-grid DNS</h3>
+        <p>Burst-buffer accelerated Navier–Stokes. 3DSG at 24% blockage rivals denser fractal and classical grids.</p>
+        <div class="meta"><span class="tag">Computers &amp; Fluids</span></div>
+      </div>
+    </a>
+    <a class="card" href="/work/spectre.html" data-filter-item="turbulence code">
+      <div class="thumb"><img src="/assets/img/work-spectre.jpg" alt=""></div>
+      <div class="card-body">
+        <p class="kicker">Learning</p>
+        <h3>SPECTRE</h3>
+        <p>Scale-aware deep emulator for turbulent mixing layers, trained on DNS from Re 2,500–30,000.</p>
+        <div class="meta"><span class="tag">Under review</span></div>
+      </div>
+    </a>
+    <a class="card" href="/work/quantum.html" data-filter-item="quantum">
+      <div class="thumb"><img src="/assets/img/work-quantum.jpg" alt=""></div>
+      <div class="card-body">
+        <p class="kicker">Quantum dynamics</p>
+        <h3>Stair-shaped grids</h3>
+        <p>Wavepacket reactive scattering in hyperspherical coordinates for F+HCl, O+O₂, Cl+H₂.</p>
+        <div class="meta"><span class="tag">CPL · TCA 2024</span></div>
+      </div>
+    </a>
+    <a class="card" href="/work/particles.html" data-filter-item="turbulence">
+      <div class="thumb"><img src="/assets/img/work-particles.jpg" alt=""></div>
+      <div class="card-body">
+        <p class="kicker">Dispersion</p>
+        <h3>Inertial particle pairs</h3>
+        <p>Kinematic simulation of pair diffusion — pollen, sandstorms, industrial aerosols — locality versus non-locality.</p>
+        <div class="meta"><span class="tag">Ph.D. thesis · AMMCS</span></div>
+      </div>
+    </a>
+    <a class="card" href="/work/wind.html" data-filter-item="energy">
+      <div class="thumb"><img src="/assets/img/work-wind.jpg" alt=""></div>
+      <div class="card-body">
+        <p class="kicker">Wind energy</p>
+        <h3>Blade flow control &amp; ROM</h3>
+        <p>CFD of turbine blades with passive/active devices, plus POD-based reduced-order models of the near-blade flow.</p>
+        <div class="meta"><span class="tag">Blade_pod</span></div>
+      </div>
+    </a>
+    <a class="card" href="/work/battery.html" data-filter-item="energy">
+      <div class="thumb"><img src="/assets/img/work-battery.jpg" alt=""></div>
+      <div class="card-body">
+        <p class="kicker">Thermal</p>
+        <h3>Battery thermal management</h3>
+        <p>Multiscale CFD and computational chemistry to diagnose thermal runaway in lithium-ion packs.</p>
+        <div class="meta"><span class="tag">BTMS</span></div>
+      </div>
+    </a>
+    <a class="card" href="/work/reservoir.html" data-filter-item="energy code">
+      <div class="thumb"><img src="/assets/img/work-reservoir.jpg" alt=""></div>
+      <div class="card-body">
+        <p class="kicker">Subsurface</p>
+        <h3>Reservoir simulation</h3>
+        <p>OpenFOAM tutorials and cases for multiphase reservoir flow, well control, and parallel I/O.</p>
+        <div class="meta"><span class="tag">OpenFOAM</span></div>
+      </div>
+    </a>
+    <a class="card" href="/work/hydrotwin.html" data-filter-item="code turbulence">
+      <div class="thumb"><img src="/assets/img/work-hydrotwin.jpg" alt=""></div>
+      <div class="card-body">
+        <p class="kicker">Product</p>
+        <h3>HydroTwin Studio</h3>
+        <p>A desktop layer over CFD so case setup, meshing, and post-processing stop being the bottleneck.</p>
+        <div class="meta"><span class="tag">In development</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="brand-foot">Flowdat</p>
+      <p>The computational practice of Syed Muhammad Usama — turbulence, mixing, and molecular reaction, computed.</p>
+    </div>
+    <div>
+      <p class="kicker">Contact</p>
+      <div class="foot-list">
+        <a href="mailto:usama@dicp.ac.cn">usama@dicp.ac.cn</a>
+        <a href="mailto:usama784@gmail.com">usama784@gmail.com</a>
+        <span>Dalian, China</span>
+      </div>
+    </div>
+    <div>
+      <p class="kicker">Elsewhere</p>
+      <div class="foot-list">
+        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
+        <a href="https://orcid.org/0000-0002-8181-4369">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=XrRe2kkAAAAJ">Google Scholar</a>
+        <a href="https://github.com/FlowDat">GitHub</a>
+        <a href="https://www.researchgate.net/profile/Syed-Usama">ResearchGate</a>
+      </div>
+    </div>
+  </div>
+  <p class="colophon"><span>© <span id="year">2026</span> Syed Muhammad Usama</span><span>State Key Laboratory of Molecular Reaction Dynamics, DICP–CAS</span></p>
+</footer>
+<script src="/assets/js/site.js"></script>
+
+</body>
+</html>

@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stair-shaped grids — Usama</title>
+  <title>Stair-shaped grids — Flowdat</title>
   <meta name="description" content="Quantum wavepacket reactive scattering on stair-shaped hyperspherical grids.">
   <link rel="canonical" href="https://flowdat.github.io/work/quantum.html">
-  <meta property="og:title" content="Stair-shaped grids — Usama">
+  <meta property="og:title" content="Stair-shaped grids — Flowdat">
   <meta property="og:description" content="Quantum wavepacket reactive scattering on stair-shaped hyperspherical grids.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://flowdat.github.io/work/quantum.html">
   <meta property="og:image" content="https://flowdat.github.io/assets/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Stair-shaped grids — Usama">
+  <meta name="twitter:title" content="Stair-shaped grids — Flowdat">
   <meta name="twitter:description" content="Quantum wavepacket reactive scattering on stair-shaped hyperspherical grids.">
   <meta name="twitter:image" content="https://flowdat.github.io/assets/img/og.jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="/assets/css/site.css">
   
 </head>
-<body data-page="work">
+<body data-page="notes">
 
 <header class="site-header" id="header">
   <a class="skip" href="#main">Skip to content</a>
@@ -41,11 +41,11 @@
     </a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav id="menu" class="nav">
-      <a href="/work.html" data-page="work">Work</a>
-      <a href="/publications.html" data-page="papers">Papers</a>
+      <a href="/" data-page="home">Archive</a>
+      <a href="/papers.html" data-page="papers">Papers</a>
       <a href="/codes.html" data-page="codes">Codes</a>
-      <a href="/about.html" data-page="about">About</a>
-      <a class="nav-cv" href="/assets/cv.pdf">CV</a>
+      <a href="/plots.html" data-page="plots">Plots</a>
+      <a href="/notes.html" data-page="notes">Notes</a>
     </nav>
   </div>
 </header>
@@ -54,10 +54,10 @@
 
 <section class="case-hero">
   <div class="wrap">
-    <a class="back" href="/work.html">← All work</a>
-    <p class="kicker">Quantum molecular dynamics</p>
+    <a class="back" href="/notes.html">← Notes</a>
+    <p class="kicker">Quantum molecular dynamics · 2024</p>
     <h1>Stair-shaped grids for reactive scattering</h1>
-    <p class="lead">Hyperspherical wavepackets that stop wasting points on regions the reaction never visits — and still resolve long-lived resonances.</p>
+    <p class="lead">Hyperspherical wavepackets that do not store points the reaction never visits, including long-lived resonances.</p>
   </div>
   <div class="wrap-wide case-cover">
     <img src="/assets/img/work-quantum.jpg" alt="Wavepacket on stair-shaped domains">
@@ -68,20 +68,17 @@
     <dl class="case-side">
     <div><dt>Papers</dt><dd><em>Chem. Phys. Lett.</em> 837, 141060 (2024)<br><em>Theor. Chem. Acc.</em> 143, 61 (2024)</dd></div>
     <div><dt>DOI</dt><dd><a href="https://doi.org/10.1016/j.cplett.2023.141060">10.1016/j.cplett.2023.141060</a><br><a href="https://doi.org/10.1007/s00214-024-03133-w">10.1007/s00214-024-03133-w</a></dd></div>
-    <div><dt>With</dt><dd>Umair Umer, Syed Kazim Usman, Hailin Zhao, Zhigang Sun</dd></div>
-    <div><dt>Lab</dt><dd>State Key Laboratory of Molecular Reaction Dynamics, DICP</dd></div>
+    <div><dt>Solvers</dt><dd><a href="https://github.com/FlowDat/schrod">FlowDat/schrod</a></dd></div>
     </dl>
   </aside>
   <article class="case-copy">
-    <p>Three atoms meet; a bond breaks; another forms. In hyperspherical coordinates the whole story — reactants, products, every arrangement in between — lives on one map. That elegance has a cost. As the hyper-radius grows, the angular grid must densify, and long-range potentials or long absorption tails make the calculation prohibitive.</p>
-    <p>We split the hyper-radius into <strong>stair-shaped domains</strong>. Each step keeps its own number of angular points. Regions where the energy is too high for the reaction to live are simply not stored. The wavepacket still sees a continuous physics; the computer sees a staircase.</p>
+    <p>Three atoms meet; a bond breaks; another forms. In hyperspherical coordinates the whole arrangement space lives on one map. As the hyper-radius grows, the angular grid must densify. Long-range potentials make a uniform mesh prohibitive.</p>
+    <p>The hyper-radius is split into <strong>stair-shaped domains</strong>, each with its own angular resolution. Regions where the energy is too high for the reaction are not stored. The wavepacket still sees continuous physics.</p>
     <figure class="figure" style="background:#000">
-      <img src="/assets/img/figures/wave-packet.gif" alt="Animated quantum wave packet">
-      <figcaption class="caption">A time-dependent wavepacket from the related Schrödinger solvers in <a href="https://github.com/FlowDat/schrod">FlowDat/schrod</a>.</figcaption>
+      <img src="/assets/img/figures/wave-packet.gif" alt="Wave packet">
+      <figcaption class="caption">Time-dependent wavepacket from the Schrödinger solvers.</figcaption>
     </figure>
-    <h2>Reactions, and the saving</h2>
-    <p>On F + HCl the stair grid cut the mesh by about 18% against the usual method, with results matching established techniques. O + O₂ saved nearly 30%. Cl + H₂ more than 33%. The 2024 <em>Theoretical Chemistry Accounts</em> paper then takes the same idea to product state-resolved probabilities, including long-lived resonances that stretch over long-range grids — the regime where a naïve time-dependent method usually fails.</p>
-    <p>This is the molecular counterpart of the 3DS story: do not pay for points that do not carry the physics.</p>
+    <p>F + HCl: about 18% fewer points, results matching established methods. O + O₂: nearly 30%. Cl + H₂: more than 33%. The <em>Theoretical Chemistry Accounts</em> paper takes the same construction to product state-resolved probabilities, including long-lived resonances that stretch over long-range grids.</p>
     </article>
 </section>
 
@@ -91,28 +88,26 @@
   <div class="wrap footer-grid">
     <div>
       <p class="brand-foot">Flowdat</p>
-      <p>The computational practice of Syed Muhammad Usama — turbulence, mixing, and molecular reaction, computed.</p>
+      <p>Research archive: turbulence, mixing, molecular reaction, scientific computing. Papers, codes, figures. 2017–2026.</p>
     </div>
     <div>
-      <p class="kicker">Contact</p>
+      <p class="kicker">Correspondence</p>
       <div class="foot-list">
         <a href="mailto:usama@dicp.ac.cn">usama@dicp.ac.cn</a>
-        <a href="mailto:usama784@gmail.com">usama784@gmail.com</a>
-        <span>Dalian, China</span>
       </div>
     </div>
     <div>
-      <p class="kicker">Elsewhere</p>
+      <p class="kicker">Records</p>
       <div class="foot-list">
-        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
         <a href="https://orcid.org/0000-0002-8181-4369">ORCID</a>
         <a href="https://scholar.google.com/citations?user=XrRe2kkAAAAJ">Google Scholar</a>
         <a href="https://github.com/FlowDat">GitHub</a>
         <a href="https://www.researchgate.net/profile/Syed-Usama">ResearchGate</a>
+        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
       </div>
     </div>
   </div>
-  <p class="colophon"><span>© <span id="year">2026</span> Syed Muhammad Usama</span><span>State Key Laboratory of Molecular Reaction Dynamics, DICP–CAS</span></p>
+  <p class="colophon"><span>© <span id="year">2026</span> Flowdat</span><span>Computational research archive</span></p>
 </footer>
 <script src="/assets/js/site.js"></script>
 

@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Codes — Flowdat</title>
-  <meta name="description" content="Open repositories for 3DS, SPECTRE, OpenFOAM, Schrödinger solvers, and blade ROMs.">
+  <meta name="description" content="Public repositories: 3DS, SPECTRE/SMLG, OpenFOAM, Schrödinger, blade ROM.">
   <link rel="canonical" href="https://flowdat.github.io/codes.html">
   <meta property="og:title" content="Codes — Flowdat">
-  <meta property="og:description" content="Open repositories for 3DS, SPECTRE, OpenFOAM, Schrödinger solvers, and blade ROMs.">
+  <meta property="og:description" content="Public repositories: 3DS, SPECTRE/SMLG, OpenFOAM, Schrödinger, blade ROM.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://flowdat.github.io/codes.html">
   <meta property="og:image" content="https://flowdat.github.io/assets/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Codes — Flowdat">
-  <meta name="twitter:description" content="Open repositories for 3DS, SPECTRE, OpenFOAM, Schrödinger solvers, and blade ROMs.">
+  <meta name="twitter:description" content="Public repositories: 3DS, SPECTRE/SMLG, OpenFOAM, Schrödinger, blade ROM.">
   <meta name="twitter:image" content="https://flowdat.github.io/assets/img/og.jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,11 +41,11 @@
     </a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav id="menu" class="nav">
-      <a href="/work.html" data-page="work">Work</a>
-      <a href="/publications.html" data-page="papers">Papers</a>
+      <a href="/" data-page="home">Archive</a>
+      <a href="/papers.html" data-page="papers">Papers</a>
       <a href="/codes.html" data-page="codes">Codes</a>
-      <a href="/about.html" data-page="about">About</a>
-      <a class="nav-cv" href="/assets/cv.pdf">CV</a>
+      <a href="/plots.html" data-page="plots">Plots</a>
+      <a href="/notes.html" data-page="notes">Notes</a>
     </nav>
   </div>
 </header>
@@ -54,37 +54,37 @@
 
 <section class="page-hero">
   <div class="wrap">
-    <p class="kicker">Open science</p>
+    <p class="kicker">Development</p>
     <h1>Codes.</h1>
-    <p class="lead">Public repositories under <a href="https://github.com/FlowDat">github.com/FlowDat</a>. MATLAB, C++, Python, OpenFOAM. Data for SPECTRE lives on Zenodo.</p>
+    <p class="lead">Public repositories under <a href="https://github.com/FlowDat">github.com/FlowDat</a>. MATLAB, C++, Python, OpenFOAM. SPECTRE data on Zenodo.</p>
   </div>
 </section>
-<section style="padding-bottom:5rem">
+<section style="padding-bottom:2rem">
   <div class="wrap grid-3">
     <a class="code-card" href="https://github.com/FlowDat/3DS">
-      <span class="lang">MATLAB</span>
+      <span class="lang">MATLAB · 2019–2026</span>
       <h3>3DS</h3>
-      <p>Sparse 3D multiscale grid geometries and companion results for the burst-buffer DNS paper. 15% blockage cases, compared with 2D fractal grids.</p>
+      <p>Sparse 3D multiscale grid geometries and companion results for burst-buffer DNS. 15% blockage cases versus 2D fractal grids.</p>
     </a>
     <a class="code-card" href="https://github.com/FlowDat/SMLG">
-      <span class="lang">Python</span>
+      <span class="lang">Python · 2025–2026</span>
       <h3>SMLG / SPECTRE</h3>
-      <p>Scale-aware digital twin of turbulence. Analysis scripts for mixing-layer DNS at seven Reynolds numbers. Data: Zenodo 21234013.</p>
+      <p>Scale-aware digital twin of turbulence. Analysis of mixing-layer DNS at seven Reynolds numbers. Zenodo 21234013.</p>
     </a>
     <a class="code-card" href="https://github.com/FlowDat/3DSPipe">
       <span class="lang">C++ · OpenFOAM</span>
       <h3>3DSPipe</h3>
-      <p>Mixing in a pipe: STL geometries, system dictionaries, coefficient-of-variation versus Reynolds number.</p>
+      <p>Pipe mixing: STL geometries, system dictionaries, coefficient of variation versus Reynolds number and downstream station.</p>
     </a>
     <a class="code-card" href="https://github.com/FlowDat/Blade_pod">
       <span class="lang">C++</span>
       <h3>Blade_pod</h3>
-      <p>POD / machine-learning reduced-order model of a wind-turbine blade flow.</p>
+      <p>POD / machine-learning reduced-order model of wind-turbine blade flow. SST versus ROM.</p>
     </a>
     <a class="code-card" href="https://github.com/FlowDat/Reservoir">
       <span class="lang">C++ · OpenFOAM</span>
       <h3>Reservoir</h3>
-      <p>Tutorial cases for reservoir simulation: grid and wells, multiphase control, parallel scaling.</p>
+      <p>Reservoir simulation tutorials: grid and wells, multiphase control, domain decomposition, parallel I/O.</p>
     </a>
     <a class="code-card" href="https://github.com/FlowDat/schrod">
       <span class="lang">MATLAB</span>
@@ -92,15 +92,43 @@
       <p>1D time-dependent Schrödinger solvers for different potentials, masses, and reaction-inspired domains.</p>
     </a>
     <a class="code-card" href="https://github.com/FlowDat/phaseChangeCondEvapHeat">
-      <span class="lang">C++</span>
+      <span class="lang">C++ · 2026</span>
       <h3>phaseChangeCondEvapHeat</h3>
       <p>Phase-change, condensation, evaporation, and heat-transfer cases.</p>
     </a>
     <a class="code-card" href="https://github.com/FlowDat/contina">
       <span class="lang">Python</span>
       <h3>contina</h3>
-      <p>Continuum / visualization experiments — mean profiles, wavepackets, and geometry studies.</p>
+      <p>Continuum visualisation: mean profiles, wavepackets, coil geometry, mesh studies.</p>
     </a>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <p class="num">3DSPipe</p>
+    <h2 style="margin-bottom:1rem">Mixing quality versus Reynolds number.</h2>
+    <div class="plot-grid">
+      <figure class="paper"><img src="/assets/img/figures/cov-re.png" alt="CoV versus Reynolds number"><figcaption>CoV vs Re at successive z stations.</figcaption></figure>
+      <figure class="paper"><img src="/assets/img/figures/cov.png" alt="Coefficient of variation"><figcaption>Coefficient of variation field.</figcaption></figure>
+      <figure class="paper"><img src="/assets/img/figures/cov23.png" alt="CoV slice"><figcaption>CoV, additional station.</figcaption></figure>
+      <figure class="paper"><img src="/assets/img/figures/cov31.png" alt="CoV slice"><figcaption>CoV, downstream station.</figcaption></figure>
+      <figure class="paper"><img src="/assets/img/figures/pipe-12.png" alt="Pipe mixing snapshot"><figcaption>Pipe mixing snapshot.</figcaption></figure>
+      <figure class="paper"><img src="/assets/img/figures/pipe-14.png" alt="Pipe mixing snapshot"><figcaption>Pipe mixing snapshot.</figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <p class="num">contina</p>
+    <h2 style="margin-bottom:1rem">Mean flow, geometry, wavepackets.</h2>
+    <div class="plot-grid">
+      <figure class="paper"><img src="/assets/img/figures/umean.png" alt="Mean velocity profile"><figcaption>Mean streamwise velocity U(y).</figcaption></figure>
+      <figure><img src="/assets/img/figures/contina-orig.png" alt="Helical coil"><figcaption>Helical coil geometry.</figcaption></figure>
+      <figure><img src="/assets/img/figures/wave-packet.gif" alt="Wave packet"><figcaption>Wavepacket evolution.</figcaption></figure>
+      <figure><img src="/assets/img/figures/contina-44006.png" alt="Field visualisation"><figcaption>Field visualisation.</figcaption></figure>
+      <figure><img src="/assets/img/figures/contina-4211.png" alt="Mesh / field"><figcaption>Mesh / field study.</figcaption></figure>
+      <figure><img src="/assets/img/figures/contina-170616.png" alt="Contour"><figcaption>Contour.</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -110,28 +138,26 @@
   <div class="wrap footer-grid">
     <div>
       <p class="brand-foot">Flowdat</p>
-      <p>The computational practice of Syed Muhammad Usama — turbulence, mixing, and molecular reaction, computed.</p>
+      <p>Research archive: turbulence, mixing, molecular reaction, scientific computing. Papers, codes, figures. 2017–2026.</p>
     </div>
     <div>
-      <p class="kicker">Contact</p>
+      <p class="kicker">Correspondence</p>
       <div class="foot-list">
         <a href="mailto:usama@dicp.ac.cn">usama@dicp.ac.cn</a>
-        <a href="mailto:usama784@gmail.com">usama784@gmail.com</a>
-        <span>Dalian, China</span>
       </div>
     </div>
     <div>
-      <p class="kicker">Elsewhere</p>
+      <p class="kicker">Records</p>
       <div class="foot-list">
-        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
         <a href="https://orcid.org/0000-0002-8181-4369">ORCID</a>
         <a href="https://scholar.google.com/citations?user=XrRe2kkAAAAJ">Google Scholar</a>
         <a href="https://github.com/FlowDat">GitHub</a>
         <a href="https://www.researchgate.net/profile/Syed-Usama">ResearchGate</a>
+        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
       </div>
     </div>
   </div>
-  <p class="colophon"><span>© <span id="year">2026</span> Syed Muhammad Usama</span><span>State Key Laboratory of Molecular Reaction Dynamics, DICP–CAS</span></p>
+  <p class="colophon"><span>© <span id="year">2026</span> Flowdat</span><span>Computational research archive</span></p>
 </footer>
 <script src="/assets/js/site.js"></script>
 

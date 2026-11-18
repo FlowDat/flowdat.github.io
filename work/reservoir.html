@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Reservoir simulation — Usama</title>
-  <meta name="description" content="OpenFOAM reservoir and mixing cases.">
+  <title>Reservoir and pipe mixing — Flowdat</title>
+  <meta name="description" content="OpenFOAM reservoir cases and 3DSPipe mixing.">
   <link rel="canonical" href="https://flowdat.github.io/work/reservoir.html">
-  <meta property="og:title" content="Reservoir simulation — Usama">
-  <meta property="og:description" content="OpenFOAM reservoir and mixing cases.">
+  <meta property="og:title" content="Reservoir and pipe mixing — Flowdat">
+  <meta property="og:description" content="OpenFOAM reservoir cases and 3DSPipe mixing.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://flowdat.github.io/work/reservoir.html">
   <meta property="og:image" content="https://flowdat.github.io/assets/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Reservoir simulation — Usama">
-  <meta name="twitter:description" content="OpenFOAM reservoir and mixing cases.">
+  <meta name="twitter:title" content="Reservoir and pipe mixing — Flowdat">
+  <meta name="twitter:description" content="OpenFOAM reservoir cases and 3DSPipe mixing.">
   <meta name="twitter:image" content="https://flowdat.github.io/assets/img/og.jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="/assets/css/site.css">
   
 </head>
-<body data-page="work">
+<body data-page="notes">
 
 <header class="site-header" id="header">
   <a class="skip" href="#main">Skip to content</a>
@@ -41,11 +41,11 @@
     </a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav id="menu" class="nav">
-      <a href="/work.html" data-page="work">Work</a>
-      <a href="/publications.html" data-page="papers">Papers</a>
+      <a href="/" data-page="home">Archive</a>
+      <a href="/papers.html" data-page="papers">Papers</a>
       <a href="/codes.html" data-page="codes">Codes</a>
-      <a href="/about.html" data-page="about">About</a>
-      <a class="nav-cv" href="/assets/cv.pdf">CV</a>
+      <a href="/plots.html" data-page="plots">Plots</a>
+      <a href="/notes.html" data-page="notes">Notes</a>
     </nav>
   </div>
 </header>
@@ -54,10 +54,10 @@
 
 <section class="case-hero">
   <div class="wrap">
-    <a class="back" href="/work.html">← All work</a>
-    <p class="kicker">Subsurface flow · OpenFOAM</p>
-    <h1>Reservoir simulation</h1>
-    <p class="lead">From mixing in a pipe to saturations in a reservoir: OpenFOAM cases for multiphase subsurface flow, well control, and parallel runs.</p>
+    <a class="back" href="/notes.html">← Notes</a>
+    <p class="kicker">Subsurface flow · mixing</p>
+    <h1>Reservoir simulation and pipe mixing</h1>
+    <p class="lead">OpenFOAM cases for multiphase subsurface flow, and a pipe-mixing campaign of CoV versus Reynolds number.</p>
   </div>
   <div class="wrap-wide case-cover">
     <img src="/assets/img/work-reservoir.jpg" alt="Subsurface reservoir saturations">
@@ -66,18 +66,15 @@
 <section class="wrap case-layout">
   <aside>
     <dl class="case-side">
-    <div><dt>Code</dt><dd><a href="https://github.com/FlowDat/Reservoir">github.com/FlowDat/Reservoir</a></dd></div>
-    <div><dt>Also</dt><dd><a href="https://github.com/FlowDat/3DSPipe">3DSPipe</a> — mixing, CoV versus Reynolds number</dd></div>
-    <div><dt>Stack</dt><dd>OpenFOAM · blockMesh · parallel I/O</dd></div>
+    <div><dt>Codes</dt><dd><a href="https://github.com/FlowDat/Reservoir">Reservoir</a> · <a href="https://github.com/FlowDat/3DSPipe">3DSPipe</a></dd></div>
     </dl>
   </aside>
   <article class="case-copy">
-    <p>KFUPM sits on hydrocarbon engineering; DICP sits on chemical physics. Reservoir simulation is where those habits meet: Darcy-scale transport, wells as internal boundary conditions, saturations that must be conservative. The <strong>Reservoir</strong> repository is a set of OpenFOAM tutorials I use for teaching and for my own case templates — basic single-phase setup, multiphase and well control, then domain decomposition and parallel I/O.</p>
+    <p>Reservoir simulation is Darcy-scale transport, wells as internal boundary conditions, saturations that must be conservative. The Reservoir repository holds tutorial cases: single-phase setup, multiphase and well control, then domain decomposition and parallel I/O.</p>
     <figure class="figure paper">
-      <img src="/assets/img/figures/cov-re.png" alt="Coefficient of variation versus Reynolds number at several downstream stations">
-      <figcaption class="caption">Mixing quality (CoV) versus Reynolds number at successive downstream stations, from the 3DSPipe campaign — the same conservation mindset, in a pipe instead of a reservoir.</figcaption>
+      <img src="/assets/img/figures/cov-re.png" alt="CoV versus Reynolds number">
+      <figcaption class="caption">Mixing quality (CoV) versus Reynolds number at successive downstream stations, 3DSPipe.</figcaption>
     </figure>
-    <p>Related industrial CFD from the KFUPM years covers static mixers, wellbores and wellheads, reduction cells, heat exchangers, and rotating machinery. The repository is the part I can show; the method is the part I take to the next field.</p>
     </article>
 </section>
 
@@ -87,28 +84,26 @@
   <div class="wrap footer-grid">
     <div>
       <p class="brand-foot">Flowdat</p>
-      <p>The computational practice of Syed Muhammad Usama — turbulence, mixing, and molecular reaction, computed.</p>
+      <p>Research archive: turbulence, mixing, molecular reaction, scientific computing. Papers, codes, figures. 2017–2026.</p>
     </div>
     <div>
-      <p class="kicker">Contact</p>
+      <p class="kicker">Correspondence</p>
       <div class="foot-list">
         <a href="mailto:usama@dicp.ac.cn">usama@dicp.ac.cn</a>
-        <a href="mailto:usama784@gmail.com">usama784@gmail.com</a>
-        <span>Dalian, China</span>
       </div>
     </div>
     <div>
-      <p class="kicker">Elsewhere</p>
+      <p class="kicker">Records</p>
       <div class="foot-list">
-        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
         <a href="https://orcid.org/0000-0002-8181-4369">ORCID</a>
         <a href="https://scholar.google.com/citations?user=XrRe2kkAAAAJ">Google Scholar</a>
         <a href="https://github.com/FlowDat">GitHub</a>
         <a href="https://www.researchgate.net/profile/Syed-Usama">ResearchGate</a>
+        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
       </div>
     </div>
   </div>
-  <p class="colophon"><span>© <span id="year">2026</span> Syed Muhammad Usama</span><span>State Key Laboratory of Molecular Reaction Dynamics, DICP–CAS</span></p>
+  <p class="colophon"><span>© <span id="year">2026</span> Flowdat</span><span>Computational research archive</span></p>
 </footer>
 <script src="/assets/js/site.js"></script>
 

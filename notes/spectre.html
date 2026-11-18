@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPECTRE — Flowdat</title>
+  <meta name="description" content="Scale-aware deep emulator of turbulent mixing layers.">
+  <link rel="canonical" href="https://flowdat.github.io/notes/spectre.html">
+  <meta property="og:title" content="SPECTRE — Flowdat">
+  <meta property="og:description" content="Scale-aware deep emulator of turbulent mixing layers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flowdat.github.io/notes/spectre.html">
+  <meta property="og:image" content="https://flowdat.github.io/assets/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SPECTRE — Flowdat">
+  <meta name="twitter:description" content="Scale-aware deep emulator of turbulent mixing layers.">
+  <meta name="twitter:image" content="https://flowdat.github.io/assets/img/og.jpg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  
+</head>
+<body data-page="notes">
+
+<header class="site-header" id="header">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="6" fill="#08090c"/>
+        <g stroke="#5ee0c8" stroke-width="1.4" stroke-linecap="square">
+          <path d="M6 9h8M10 6v6"/>
+          <path d="M14 16h10M19 12v8" opacity=".85"/>
+          <path d="M8 24h6M11 21v6" opacity=".65"/>
+        </g>
+        <circle cx="24.5" cy="23.5" r="1.4" fill="#d08a5a"/>
+      </svg>
+      <span>Flowdat</span>
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="nav">
+      <a href="/" data-page="home">Archive</a>
+      <a href="/papers.html" data-page="papers">Papers</a>
+      <a href="/codes.html" data-page="codes">Codes</a>
+      <a href="/plots.html" data-page="plots">Plots</a>
+      <a href="/notes.html" data-page="notes">Notes</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="case-hero">
+  <div class="wrap">
+    <a class="back" href="/notes.html">← Notes</a>
+    <p class="kicker">Scientific machine learning · 2025–2026</p>
+    <h1>SPECTRE — mixing-layer emulator</h1>
+    <p class="lead">A scale-separated, physics-constrained network trained on DNS mixing layers from Re 2,500 to 30,000.</p>
+  </div>
+  <div class="wrap-wide case-cover">
+    <img src="/assets/img/work-spectre.jpg" alt="Neural overlay on a mixing layer">
+  </div>
+</section>
+<section class="wrap case-layout">
+  <aside>
+    <dl class="case-side">
+    <div><dt>Status</dt><dd>Under review, <em>Results in Engineering</em>, 2026</dd></div>
+    <div><dt>Code</dt><dd><a href="https://github.com/FlowDat/SMLG">FlowDat/SMLG</a></dd></div>
+    <div><dt>Data</dt><dd><a href="https://zenodo.org/records/21234013">Zenodo 21234013</a></dd></div>
+    </dl>
+  </aside>
+  <article class="case-copy">
+    <p>Mixing layers are simple enough to DNS and hard enough to matter: two streams, a shear, a scalar, a growing thickness. A network that only fits one Reynolds number has learned a picture, not a flow.</p>
+    <p><strong>SPECTRE</strong> is trained on DNS at seven Reynolds numbers — 2,500, 5,000, 10,000, 15,000, 20,000, 25,000, 30,000. Stored fields: streamwise and wall-normal velocity, pressure, scalar concentration, mean, temporal ROM coefficients, reconstruction. The public analysis stack plots spectra, stresses, coherent structures, and mixing metrics against the original DNS.</p>
+    <div class="plot-grid two">
+      <figure class="figure" style="margin:0"><img src="/assets/img/figures/figure05_mean_flow_profiles.jpg" alt=""><figcaption class="caption">Mean flow profiles.</figcaption></figure>
+      <figure class="figure" style="margin:0"><img src="/assets/img/figures/figure08_coherent_structures.jpg" alt=""><figcaption class="caption">Coherent structures.</figcaption></figure>
+    </div>
+    <p>The manuscript <em>Scale-separated, physics constrained, deep neural network for turbulent mixing layer simulations</em> is under review. Copy the Zenodo dump into <code>data/</code> and the SMLG scripts regenerate the figures.</p>
+    </article>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="brand-foot">Flowdat</p>
+      <p>Research archive: turbulence, mixing, molecular reaction, scientific computing. Papers, codes, figures. 2017–2026.</p>
+    </div>
+    <div>
+      <p class="kicker">Correspondence</p>
+      <div class="foot-list">
+        <a href="mailto:usama@dicp.ac.cn">usama@dicp.ac.cn</a>
+      </div>
+    </div>
+    <div>
+      <p class="kicker">Records</p>
+      <div class="foot-list">
+        <a href="https://orcid.org/0000-0002-8181-4369">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=XrRe2kkAAAAJ">Google Scholar</a>
+        <a href="https://github.com/FlowDat">GitHub</a>
+        <a href="https://www.researchgate.net/profile/Syed-Usama">ResearchGate</a>
+        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <p class="colophon"><span>© <span id="year">2026</span> Flowdat</span><span>Computational research archive</span></p>
+</footer>
+<script src="/assets/js/site.js"></script>
+
+</body>
+</html>

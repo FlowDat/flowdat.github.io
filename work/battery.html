@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Battery thermal management — Usama</title>
+  <title>Battery thermal management — Flowdat</title>
   <meta name="description" content="Multiscale CFD and chemistry for lithium-ion thermal runaway.">
   <link rel="canonical" href="https://flowdat.github.io/work/battery.html">
-  <meta property="og:title" content="Battery thermal management — Usama">
+  <meta property="og:title" content="Battery thermal management — Flowdat">
   <meta property="og:description" content="Multiscale CFD and chemistry for lithium-ion thermal runaway.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://flowdat.github.io/work/battery.html">
   <meta property="og:image" content="https://flowdat.github.io/assets/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Battery thermal management — Usama">
+  <meta name="twitter:title" content="Battery thermal management — Flowdat">
   <meta name="twitter:description" content="Multiscale CFD and chemistry for lithium-ion thermal runaway.">
   <meta name="twitter:image" content="https://flowdat.github.io/assets/img/og.jpg">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="/assets/css/site.css">
   
 </head>
-<body data-page="work">
+<body data-page="notes">
 
 <header class="site-header" id="header">
   <a class="skip" href="#main">Skip to content</a>
@@ -41,10 +41,11 @@
     </a>
     <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
     <nav id="menu" class="nav">
-      <a href="/work.html" data-page="work">Work</a>
-      <a href="/publications.html" data-page="papers">Papers</a>
+      <a href="/" data-page="home">Archive</a>
+      <a href="/papers.html" data-page="papers">Papers</a>
       <a href="/codes.html" data-page="codes">Codes</a>
-      <a href="/about.html" data-page="about">About</a>
+      <a href="/plots.html" data-page="plots">Plots</a>
+      <a href="/notes.html" data-page="notes">Notes</a>
     </nav>
   </div>
 </header>
@@ -53,10 +54,10 @@
 
 <section class="case-hero">
   <div class="wrap">
-    <a class="back" href="/work.html">← All work</a>
-    <p class="kicker">Energy storage · Safety</p>
+    <a class="back" href="/notes.html">← Notes</a>
+    <p class="kicker">Energy storage · safety</p>
     <h1>Multiscale battery thermal management</h1>
-    <p class="lead">A lithium-ion pack fails thermally at the cell, the module, and the chemistry at once. The diagnosis has to as well.</p>
+    <p class="lead">Lithium-ion packs fail thermally at the cell, the module, and the chemistry at once. The diagnosis has to as well.</p>
   </div>
   <div class="wrap-wide case-cover">
     <img src="/assets/img/work-battery.jpg" alt="Battery pack with thermal field">
@@ -66,12 +67,10 @@
   <aside>
     <dl class="case-side">
     <div><dt>Methods</dt><dd>CFD heat transfer · computational chemistry · multiscale entropy</dd></div>
-    <div><dt>Aim</dt><dd>Early detection of thermal runaway</dd></div>
     </dl>
   </aside>
   <article class="case-copy">
-    <p>Battery thermal management is not only a cooling problem. Thermal runaway is a chemical cascade that CFD alone cannot see and that a 0D equivalent-circuit model will not locate in a pack. The useful picture is multiscale: computational fluid dynamics for the coolant and the cell-to-cell coupling; computational chemistry for the reactions that start the runaway; data-driven diagnostics (modified multiscale entropy on temperature traces) for the pattern that says the pack is leaving the safe manifold.</p>
-    <p>I treat BTMS the way I treat combustion chambers: a flow, a reaction, and a prognosis. The industrial stake is obvious — electric vehicles, grid storage, and any chemistry that would rather not become a fire.</p>
+    <p>Battery thermal management is not only a cooling problem. Thermal runaway is a chemical cascade that CFD alone cannot see and that a 0D equivalent-circuit model will not locate in a pack. The useful picture is multiscale: CFD for coolant and cell-to-cell coupling; computational chemistry for the reactions that start the runaway; data-driven diagnostics (modified multiscale entropy on temperature traces) for the pattern that says the pack is leaving the safe manifold.</p>
     </article>
 </section>
 
@@ -81,27 +80,26 @@
   <div class="wrap footer-grid">
     <div>
       <p class="brand-foot">Flowdat</p>
-      <p>The computational practice of Syed Muhammad Usama — turbulence, mixing, and molecular reaction, computed.</p>
+      <p>Research archive: turbulence, mixing, molecular reaction, scientific computing. Papers, codes, figures. 2017–2026.</p>
     </div>
     <div>
-      <p class="kicker">Contact</p>
+      <p class="kicker">Correspondence</p>
       <div class="foot-list">
         <a href="mailto:usama@dicp.ac.cn">usama@dicp.ac.cn</a>
-        <span>Dalian, China</span>
       </div>
     </div>
     <div>
-      <p class="kicker">Elsewhere</p>
+      <p class="kicker">Records</p>
       <div class="foot-list">
-        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
         <a href="https://orcid.org/0000-0002-8181-4369">ORCID</a>
         <a href="https://scholar.google.com/citations?user=XrRe2kkAAAAJ">Google Scholar</a>
         <a href="https://github.com/FlowDat">GitHub</a>
         <a href="https://www.researchgate.net/profile/Syed-Usama">ResearchGate</a>
+        <a href="https://www.linkedin.com/in/syedusama8386/">LinkedIn</a>
       </div>
     </div>
   </div>
-  <p class="colophon"><span>© <span id="year">2026</span> Syed Muhammad Usama</span><span>State Key Laboratory of Molecular Reaction Dynamics, DICP–CAS</span></p>
+  <p class="colophon"><span>© <span id="year">2026</span> Flowdat</span><span>Computational research archive</span></p>
 </footer>
 <script src="/assets/js/site.js"></script>
 

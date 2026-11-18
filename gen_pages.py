@@ -26,7 +26,6 @@ NAV = """
       <a href="/publications.html" data-page="papers">Papers</a>
       <a href="/codes.html" data-page="codes">Codes</a>
       <a href="/about.html" data-page="about">About</a>
-      <a class="nav-cv" href="/assets/cv.pdf">CV</a>
     </nav>
   </div>
 </header>
@@ -43,7 +42,6 @@ FOOT = """
       <p class="kicker">Contact</p>
       <div class="foot-list">
         <a href="mailto:usama@dicp.ac.cn">usama@dicp.ac.cn</a>
-        <a href="mailto:usama784@gmail.com">usama784@gmail.com</a>
         <span>Dalian, China</span>
       </div>
     </div>
@@ -140,13 +138,13 @@ HOME = r"""
     <p class="lead">Computational scientist at the Dalian Institute of Chemical Physics, Chinese Academy of Sciences. I design numerical methods for turbulence, mixing, and molecular reaction — from burst-buffer DNS of 3D sparse grids to quantum wavepackets on stair-shaped meshes.</p>
     <div class="hero-actions">
       <a class="btn btn-solid" href="/work.html">Selected work</a>
-      <a class="btn btn-ghost" href="/assets/cv.pdf">Download CV</a>
+      <a class="btn btn-ghost" href="/publications.html">Publications</a>
     </div>
   </div>
   <ul class="hero-stats">
     <li><b>15+</b><span>Years in research and teaching</span></li>
-    <li><b>Principal Scientist</b><span>DICP · Chinese Academy of Sciences, 2023</span></li>
-    <li><b>Almarai</b><span>Best Thesis Award, KFUPM, 2019</span></li>
+    <li><b>DICP–CAS</b><span>State Key Laboratory of Molecular Reaction Dynamics</span></li>
+    <li><b>Ph.D.</b><span>Mathematics, KFUPM</span></li>
     <li><b>Computers &amp; Fluids</b><span>Burst-buffer DNS of 3DS grids, 2026</span></li>
   </ul>
 </section>
@@ -217,9 +215,9 @@ HOME = r"""
     </div>
     <div>
       <p class="lead">I am a computational scientist at DICP, Chinese Academy of Sciences, in Dalian. The lab sits at the intersection of fluid mechanics, combustion, and quantum chemistry — Nature Index rank 1 worldwide.</p>
-      <p>Before Dalian I was Lecturer-B at KFUPM, where the Almarai Best Thesis Award recognized my Ph.D. on 3D sparse-grid turbulence and inertial particle-pair diffusion. Earlier I taught and consulted at COMSATS Islamabad. The through-line is the same: efficient numerics for flows that mix, burn, or scatter.</p>
+      <p>Before Dalian I was Lecturer-B at KFUPM, where the Ph.D. work covered 3D sparse-grid turbulence and inertial particle-pair diffusion. Earlier I taught and consulted at COMSATS Islamabad. The through-line is the same: efficient numerics for flows that mix, burn, or scatter.</p>
       <div class="hero-actions">
-        <a class="btn btn-ghost" href="/about.html">Biography &amp; CV</a>
+        <a class="btn btn-ghost" href="/about.html">About</a>
         <a class="btn btn-ghost" href="/publications.html">Publication list</a>
       </div>
     </div>
@@ -437,7 +435,7 @@ CASE_SPECTRE = case(
     r"""
     <p>Mixing layers are simple enough to DNS and hard enough to matter: two streams, a shear, a scalar, a growing thickness. They are also a brutal test for a surrogate. A network that only fits one Reynolds number has learned a picture, not a flow.</p>
     <p><strong>SPECTRE</strong> is a scale-separated, physics-constrained deep network trained on DNS of turbulent mixing layers at seven Reynolds numbers — 2,500, 5,000, 10,000, 15,000, 20,000, 25,000, 30,000. The fields stored with the model are streamwise and wall-normal velocity, pressure, and scalar concentration, together with the mean, the temporal coefficients of a reduced-order model, and the reconstruction. The public analysis stack plots spectral content, stresses, coherent structures, and mixing metrics against the original DNS.</p>
-    <p>The companion manuscript on the CV, <em>Scale-separated, physics constrained, deep neural network for turbulent mixing layer simulations</em>, is under review at <em>Results in Engineering</em> (2026). The SMLG repository is the working digital twin of that paper: copy the Zenodo dump into <code>data/</code>, run the analysis, and the figures of the manuscript come back.</p>
+    <p>The companion manuscript, <em>Scale-separated, physics constrained, deep neural network for turbulent mixing layer simulations</em>, is under review at <em>Results in Engineering</em> (2026). The SMLG repository is the working digital twin of that paper: copy the Zenodo dump into <code>data/</code>, run the analysis, and the figures of the manuscript come back.</p>
     <h2>The point of a twin</h2>
     <p>DNS of a mixing layer at Re 30,000 is not something you rerun to try a new Schmidt number over lunch. An emulator that respects scale separation and the conservation structure of the flow is how you explore the neighbourhood of a validated case — and how a platform like HydroTwin can feel interactive without lying about the physics.</p>
     """,
@@ -564,7 +562,7 @@ PUBS = r"""
   <div class="wrap">
     <p class="kicker">Writing</p>
     <h1>Publications.</h1>
-    <p class="lead">Selected papers, proceedings, and manuscripts. Google Scholar and ORCID carry the archival record; this list follows the CV.</p>
+    <p class="lead">Selected papers, proceedings, and manuscripts. Google Scholar and ORCID carry the archival record.</p>
     <div class="contact-row">
       <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=XrRe2kkAAAAJ">Google Scholar</a>
       <a class="btn btn-ghost" href="https://orcid.org/0000-0002-8181-4369">ORCID</a>
@@ -680,12 +678,12 @@ PUBS = r"""
 ABOUT = r"""
 <section class="page-hero">
   <div class="wrap">
-    <p class="kicker">Biography</p>
+    <p class="kicker">Profile</p>
     <h1>About.</h1>
-    <p class="lead">Syed Muhammad Usama is a computational scientist at the Dalian Institute of Chemical Physics, Chinese Academy of Sciences. Ph.D. in mathematics, KFUPM. Principal Scientist, 2023.</p>
+    <p class="lead">Syed Muhammad Usama is a computational scientist at the Dalian Institute of Chemical Physics, Chinese Academy of Sciences. Ph.D. in mathematics, KFUPM.</p>
     <div class="contact-row">
-      <a class="btn btn-solid" href="/assets/cv.pdf">Download CV (PDF)</a>
-      <a class="btn btn-ghost" href="mailto:usama@dicp.ac.cn">Email</a>
+      <a class="btn btn-solid" href="mailto:usama@dicp.ac.cn">Email</a>
+      <a class="btn btn-ghost" href="https://orcid.org/0000-0002-8181-4369">ORCID</a>
     </div>
   </div>
 </section>
@@ -694,9 +692,9 @@ ABOUT = r"""
   <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem">
     <div class="prose">
       <p>I work where fluids mix and molecules react: direct numerical simulation of turbulence, kinematic simulation of inertial particles, quantum wavepackets for triatomic scattering, and physics-constrained learning that makes those simulations cheaper to live with.</p>
-      <p>The current home is the <strong>State Key Laboratory of Molecular Reaction Dynamics</strong> and the Center for Theoretical and Computational Chemistry at DICP in Dalian — Nature Index rank 1 worldwide. I arrived in 2019 as a Young International Talent, was named Principal Scientist in 2023, and continue as a research scientist on NSFC-supported work.</p>
-      <p>Before China I spent five years at <strong>KFUPM</strong> in Dhahran as Lecturer-B and R&amp;D specialist: industrial CFD for mixers, wellbores, heat exchangers and reservoirs, plus the Ph.D. that became the 3DS and particle-pair programme. The Almarai Best Thesis Award (2019) and a first-prize research prize (2018) came out of that period, as did an EUHIT exchange at the Max Planck Institute and an HPC/AI allocation at KAUST.</p>
-      <p>Still earlier I lectured at <strong>COMSATS University Islamabad</strong> (2010–2014), after an M.S. and B.S. in mathematics there. Teaching has never been a side job: distinctive recognition as a TA at KFUPM, a data-science trainer, a COMSATS faculty-development certificate, and a mathematics olympiad I helped run.</p>
+      <p>The current appointment is at the <strong>State Key Laboratory of Molecular Reaction Dynamics</strong> and the Center for Theoretical and Computational Chemistry at DICP in Dalian.</p>
+      <p>Before China I spent five years at <strong>KFUPM</strong> in Dhahran as Lecturer-B and R&amp;D specialist: industrial CFD for mixers, wellbores, heat exchangers and reservoirs, plus the Ph.D. on 3D sparse-grid turbulence and inertial particle-pair diffusion.</p>
+      <p>Earlier I lectured at <strong>COMSATS University Islamabad</strong> (2010–2014), after an M.S. and B.S. in mathematics there.</p>
     </div>
     <div>
       <p class="kicker">Research interests</p>
@@ -707,11 +705,10 @@ ABOUT = r"""
         <span>Efficient numerics for flow</span>
         <span>Scientific machine learning</span>
       </div>
-      <p class="kicker">Coordinates</p>
+      <p class="kicker">Contact</p>
       <div class="prose">
         <p>State Key Laboratory of Molecular Reaction Dynamics<br>Dalian Institute of Chemical Physics, CAS<br>116023 Dalian, China</p>
         <p><a href="mailto:usama@dicp.ac.cn">usama@dicp.ac.cn</a><br>
-        <a href="mailto:usama784@gmail.com">usama784@gmail.com</a><br>
         ORCID <a href="https://orcid.org/0000-0002-8181-4369">0000-0002-8181-4369</a></p>
       </div>
     </div>
@@ -728,15 +725,15 @@ ABOUT = r"""
         <div>
           <h3>Research Assistant / Computational Scientist</h3>
           <p class="org">Dalian Institute of Chemical Physics, Chinese Academy of Sciences</p>
-          <p>Molecular reaction dynamics, DNS, quantum scattering, and physics-constrained learning. NSFC–RFIS-I project award, 2025.</p>
+          <p>Molecular reaction dynamics, DNS, quantum scattering, and physics-constrained learning.</p>
         </div>
       </article>
       <article class="tl">
         <div class="when">2019 — 2025</div>
         <div>
           <h3>Postdoctoral scientist</h3>
-          <p class="org">DICP · Young International Talent (2019–23) · Tier-A International Scholar (2022–23)</p>
-          <p>Multidisciplinary research in the State Key Laboratory of Molecular Reaction Dynamics. Principal Scientist, 2023. Research mentor certificate, 2024.</p>
+          <p class="org">Dalian Institute of Chemical Physics, Chinese Academy of Sciences</p>
+          <p>Research in the State Key Laboratory of Molecular Reaction Dynamics.</p>
         </div>
       </article>
       <article class="tl">
@@ -744,7 +741,7 @@ ABOUT = r"""
         <div>
           <h3>Lecturer-B &amp; R&amp;D specialist</h3>
           <p class="org">King Fahd University of Petroleum and Minerals, Dhahran</p>
-          <p>Industrial CFD and FEA: static mixers, multiscale grids, wellbores, vehicles, particles, electrochemical processes. Taught; trained data science and machine learning (2016–17).</p>
+          <p>Industrial CFD and FEA: static mixers, multiscale grids, wellbores, vehicles, particles, electrochemical processes. Teaching in mathematics and scientific computing.</p>
         </div>
       </article>
       <article class="tl">
@@ -752,7 +749,7 @@ ABOUT = r"""
         <div>
           <h3>Lecturer / associate researcher</h3>
           <p class="org">COMSATS University Islamabad</p>
-          <p>Numerical methods for flow and optimization; industrial mechanical-design problems; faculty development and the COMSATS Mathematics Olympiad.</p>
+          <p>Numerical methods for flow and optimization; industrial mechanical-design problems.</p>
         </div>
       </article>
     </div>
@@ -768,8 +765,8 @@ ABOUT = r"""
         <div class="when">2014 — 2018</div>
         <div>
           <h3>Ph.D. Mathematics</h3>
-          <p class="org">King Fahd University of Petroleum and Minerals · QS ~69 worldwide</p>
-          <p>Dissertation: <em>Direct Numerical Simulation of 3D Sparse Multiscale Grid Generated Turbulence and Kinematic Simulation of Inertial Particle Pair Diffusion.</em> Almarai Best Thesis Award, 2019.</p>
+          <p class="org">King Fahd University of Petroleum and Minerals</p>
+          <p>Dissertation: <em>Direct Numerical Simulation of 3D Sparse Multiscale Grid Generated Turbulence and Kinematic Simulation of Inertial Particle Pair Diffusion.</em></p>
         </div>
       </article>
       <article class="tl">
@@ -786,27 +783,6 @@ ABOUT = r"""
           <p class="org">COMSATS University Islamabad</p>
         </div>
       </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <p class="num">Recognition</p>
-    <div class="section-head"><h2>Honors, awards, grants.</h2></div>
-    <div class="honors">
-      <div class="honor"><b>Principal Scientist</b><span>DICP–Chinese Academy of Sciences, 2023</span></div>
-      <div class="honor"><b>Young International Talent</b><span>Multidisciplinary research, DICP–CAS, 2019–23</span></div>
-      <div class="honor"><b>Tier-A International Scholar</b><span>International Talent Program, CAS, 2022–23</span></div>
-      <div class="honor"><b>Almarai Best Thesis Award</b><span>KFUPM, 2019</span></div>
-      <div class="honor"><b>NSFC–RFIS-I Project Award</b><span>Chinese Academy of Sciences, 2025</span></div>
-      <div class="honor"><b>Research &amp; Innovation Award, first prize</b><span>Interdepartmental competition, KFUPM, 2018</span></div>
-      <div class="honor"><b>National Natural Science Foundation Grant</b><span>China, 2022</span></div>
-      <div class="honor"><b>International Scholars Funding</b><span>DICP–CAS, 2020</span></div>
-      <div class="honor"><b>EUHIT Research Exchange</b><span>Max Planck Institute, 2018</span></div>
-      <div class="honor"><b>HPC and artificial intelligence allocation</b><span>KAUST, 2017</span></div>
-      <div class="honor"><b>NSTIP Research Grant</b><span>KFUPM, 2016</span></div>
-      <div class="honor"><b>DSR Student Grant</b><span>KFUPM, 2015</span></div>
     </div>
   </div>
 </section>
@@ -903,6 +879,6 @@ page("/work/battery.html", "Battery thermal management — Usama", "Multiscale C
 page("/work/reservoir.html", "Reservoir simulation — Usama", "OpenFOAM reservoir and mixing cases.", CASE_RES, "work")
 page("/work/hydrotwin.html", "HydroTwin Studio — Usama", "A desktop environment for interactive CFD.", CASE_HT, "work")
 page("/publications.html", "Publications — Syed Muhammad Usama", "Papers on 3DS turbulence, burst-buffer DNS, quantum scattering, and mixing-layer learning.", PUBS, "papers")
-page("/about.html", "About — Syed Muhammad Usama", "Computational scientist at DICP, Chinese Academy of Sciences. Ph.D. KFUPM. Principal Scientist, 2023.", ABOUT_FIX, "about")
+page("/about.html", "About — Syed Muhammad Usama", "Computational scientist at DICP, Chinese Academy of Sciences. Ph.D. Mathematics, KFUPM.", ABOUT_FIX, "about")
 page("/codes.html", "Codes — Flowdat", "Open repositories for 3DS, SPECTRE, OpenFOAM, Schrödinger solvers, and blade ROMs.", CODES, "codes")
 page("/404.html", "Page not found — Flowdat", "The page is not in the mesh.", LOST, "")

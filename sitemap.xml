@@ -1,20 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://flowdat.github.io/</loc></url>
-  <url><loc>https://flowdat.github.io/papers.html</loc></url>
-  <url><loc>https://flowdat.github.io/codes.html</loc></url>
-  <url><loc>https://flowdat.github.io/plots.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/grid-turbulence.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/spectre.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/quantum.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/particles.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/wind.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/thermal.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/reservoir.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/hydrotwin.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/combustion.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/sst.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/cfd.html</loc></url>
-  <url><loc>https://flowdat.github.io/notes/materials.html</loc></url>
 </urlset>
